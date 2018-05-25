@@ -132,12 +132,6 @@ function verifyName(name)
 		return 'O seu nome contem caracteres ~r~inválidos~s~.'
 	end
 	
-	-- Does the player carry a first and last name?
-	-- 
-	-- Example:
-	-- Allowed:     'Bob Joe'
-	-- Not allowed: 'Bob'
-	-- Not allowed: 'Bob joe'
 	local spacesInName    = 0
 	local spacesWithUpper = 0
 	for word in string.gmatch(name, '%S+') do
